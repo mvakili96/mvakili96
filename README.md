@@ -1,16 +1,147 @@
-## Hi there 👋
+<p align="center">
+  <img src="assets/profile-header.svg" width="100%" alt="Mohammadjavad Ghorbanalivakili — AI Research Engineer, Computer Vision, Multimodal AI, and Autonomous Perception">
+</p>
 
-<!--
-**mvakili96/mvakili96** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <a href="https://linkedin.com/in/mjghvakili">LinkedIn</a>
+  ·
+  <a href="https://hub.docker.com/u/mvakili96">Docker Hub</a>
+  ·
+  Toronto, Canada
+  ·
+  Open to relocation
+</p>
 
-Here are some ideas to get you started:
+<p align="center">
+  I build perception systems for autonomous machines—from real-world sensor data and model training
+  to distributed experiments, rigorous evaluation, and deployable software workflows.
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<table>
+  <tr>
+    <td align="center" width="25%"><strong>RGB · LiDAR · VLMs</strong><br><sub>Perception modalities</sub></td>
+    <td align="center" width="25%"><strong>8× NVIDIA L40</strong><br><sub>Distributed across 2 nodes</sub></td>
+    <td align="center" width="25%"><strong>Research + engineering</strong><br><sub>Models, APIs, containers, CI</sub></td>
+    <td align="center" width="25%"><strong>3 published + 1 forthcoming</strong><br><sub>Selected research output</sub></td>
+  </tr>
+</table>
+
+## About
+
+I am an **AI Research Engineer and PhD Candidate at York University** working on reliable perception for autonomous systems. My research spans RGB and LiDAR scene understanding, self-supervised learning, and vision-language models, supported by hands-on experience with distributed GPU training, HPC infrastructure, reproducible evaluation, and containerized applications.
+
+Beyond research code, I build tested backend systems and developer workflows using Python, Flask, Redis, Docker, GitHub Actions, and pytest.
+
+## Research trajectory
+
+<p align="center">
+  <img src="assets/research-trajectory.svg" width="100%" alt="TPE-Net candidate-path extraction to TRIT-Net learned instance tracing to reasoning-guided vision-language segmentation">
+</p>
+
+## Selected work
+
+### 01 / Reasoning-Guided Railway Perception
+
+A railway-domain adaptation of **LISA** that combines a LLaVA-style multimodal backbone, SAM-based mask prediction, and LoRA fine-tuning to segment the valid ego-path in railway switch scenes from an image and language prompt. The project adds rail-specific prompts, polygon-mask and explanation supervision, and distributed training workflows using DeepSpeed, Slurm, and Apptainer.
+
+**8 NVIDIA L40 GPUs across 2 nodes** · **Accepted/forthcoming in ISPRS Archives 2026**
+
+`PyTorch` · `LISA` · `LLaVA` · `SAM` · `LoRA` · `DeepSpeed` · `Slurm` · `Apptainer`
+
+[Explore the code →](https://github.com/mvakili96/Railway_Perception_FoundationModel)  
+<sub>Railway-domain adaptation built on the open-source LISA project.</sub>
+
+---
+
+### 02 / TRIT-Net
+
+A multi-head railway-perception framework that predicts centerline and **Attraction Field** representations for bottom-up path-candidate tracing and controlled branching in complex switch scenes. The research code includes configurable training, dataset loaders, evaluation, checkpointing, experiment logging, and a shared demo/inference pipeline.
+
+The current research line adds VICReg-style self-supervised encoder pretraining using **23,924 unlabeled railway images** and multi-dataset evaluation.
+
+`Python` · `PyTorch` · `OpenCV` · `Transformers` · `VICReg` · `DDP/NCCL` · `W&B`
+
+[Code](https://github.com/mvakili96/TRIT-Net) · [CRV 2025 paper](https://crv.pubpub.org/pub/h6d3dccv)  
+<sub>Published at CRV 2025 · Revised journal manuscript under review</sub>
+
+---
+
+### 03 / ChipIn
+
+A Flask and Redis Stack application for managing users, groups, expenses, and settlement calculations. It includes a browser admin panel, Telegram Mini App and bot integration, server-side Telegram authentication, Docker Compose environments, and automated unit and live-service integration tests.
+
+**GitHub Actions** validates pytest-based unit tests and a Docker Compose integration flow against Redis Stack.
+
+`Python` · `Flask` · `Redis Stack` · `REST APIs` · `Docker Compose` · `pytest` · `GitHub Actions`
+
+[Explore the project →](https://github.com/mvakili96/ChipIn)
+
+## Technical toolkit
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Perception and learning</strong><br><br>
+      Computer Vision · Deep Learning · Multimodal AI · Vision-Language Models · Semantic and Instance Segmentation · Self-Supervised Learning · LiDAR and Point Clouds · Depth Estimation · 3D Reconstruction
+    </td>
+    <td width="50%" valign="top">
+      <strong>ML development</strong><br><br>
+      Python · PyTorch · OpenCV · NumPy · Pandas · scikit-learn · Transformers · LoRA/PEFT
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Training and infrastructure</strong><br><br>
+      PyTorch DDP · DeepSpeed · Slurm · Apptainer · Docker · Docker Compose · Weights & Biases · TensorBoard
+    </td>
+    <td width="50%" valign="top">
+      <strong>Software engineering</strong><br><br>
+      Flask · Redis Stack · REST APIs · pytest · GitHub Actions · Git · Linux
+    </td>
+  </tr>
+</table>
+
+## Selected research
+
+- **Reasoning-guided Ego-path Segmentation for Autonomous Trains using Vision-language Models** — ISPRS Archives 2026, accepted/forthcoming · [Code](https://github.com/mvakili96/Railway_Perception_FoundationModel)
+- **Multi-Railway Track and Switch Region Recognition Using Mobile Laser Scanning Data** — IEEE ITSC 2025 · [DOI](https://doi.org/10.1109/ITSC60802.2025.11423103)
+- **TRIT-Net: Triplet-based Railway Instance Tracing Network Using Attraction Field Representation** — CRV 2025 · [Paper](https://crv.pubpub.org/pub/h6d3dccv) · [Code](https://github.com/mvakili96/TRIT-Net)
+- **TPE-Net: Track Point Extraction and Association Network for Rail Path Proposal Generation** — IEEE CASE 2023, equal-contribution co-first author · [DOI](https://doi.org/10.1109/CASE56687.2023.10260541)
+
+<details>
+<summary><strong>Current manuscripts</strong></summary>
+
+<br>
+
+- **Triplet-based Railway Ego-path Candidate Tracing Using a Learned Attraction Field Representation** — revised manuscript under review
+- **TPE-Net: A Deep Triple Point Extraction Network for Multiple-Track Rail Path Association** — submitted manuscript
+
+</details>
+
+## Experience
+
+**Graduate Researcher · Augmented Urban Space Modelling Lab, York University · 2021–present**  
+Develops end-to-end railway-perception workflows spanning RGB and LiDAR data, dataset preparation, supervised and self-supervised training, vision-language model adaptation, and benchmark evaluation.
+
+**Visiting Researcher · Smart Mobility Lab, Hanyang University · 2026**  
+Worked on foundation-model pipelines for delivery-robot survey data, including object perception, depth estimation, and 3D reconstruction.
+
+<sub>Earlier work spans autonomous agricultural systems, 3D orchard mapping, embedded sensing and actuation, signal processing, PCB/AVR development, and mechanical validation.</sub>
+
+## Education
+
+- **PhD Candidate, Earth and Space Science and Engineering** — York University
+- **MSc, Mechanical Engineering** — Sharif University of Technology
+- **BSc, Mechanical Engineering** — University of Tehran
+
+## Beyond the lab
+
+Outside AI research, I am a personal trainer and HIIT instructor recognized as the **Tait McKenzie Centre's Personal Trainer of the Year for 2024–2025**.
+
+---
+
+<p align="center">
+  <strong>Interested in computer vision, multimodal AI, autonomous perception, or real-world ML systems?</strong>
+  <br><br>
+  <a href="https://linkedin.com/in/mjghvakili">Let's connect on LinkedIn</a>
+</p>
