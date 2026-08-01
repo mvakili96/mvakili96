@@ -6,10 +6,6 @@
   <a href="https://linkedin.com/in/mjghvakili">LinkedIn</a>
   ·
   <a href="https://hub.docker.com/u/mvakili96">Docker Hub</a>
-  ·
-  Toronto, Canada
-  ·
-  Open to relocation
 </p>
 
 <table>
@@ -86,7 +82,17 @@ A railway-domain adaptation of **[LISA](https://openaccess.thecvf.com/content/CV
 
 ---
 
-### 03 / ChipIn
+### 03 / Multi-Railway Automatic Data Extraction
+
+An automated railway-asset extraction pipeline for mobile laser scanning point clouds. It traces individual rail vectors using Kalman filtering, detects multi-track regions through minimum description length model selection, and recognizes switch orientation, status, and merge/split type using multiscale template matching.
+
+- **[Multi-Railway Track and Switch Region Recognition Using Mobile Laser Scanning Data](https://doi.org/10.1109/ITSC60802.2025.11423103)** — Published at IEEE ITSC 2025
+
+<sub>The source repository remains private.</sub>
+
+---
+
+### 04 / ChipIn
 
 A Flask and Redis Stack application for managing users, groups, expenses, and settlement calculations. It includes a browser admin panel, Telegram Mini App and bot integration, server-side Telegram authentication, Docker Compose environments, and automated unit and live-service integration tests.
 
@@ -96,23 +102,6 @@ A Flask and Redis Stack application for managing users, groups, expenses, and se
 
 [Explore the project →](https://github.com/mvakili96/ChipIn)
 
-## Selected research
-
-- **Reasoning-guided Ego-path Segmentation for Autonomous Trains using Vision-language Models** — ISPRS Archives 2026, accepted/forthcoming · [Code](https://github.com/mvakili96/Railway_Perception_FoundationModel)
-- **Multi-Railway Track and Switch Region Recognition Using Mobile Laser Scanning Data** — IEEE ITSC 2025 · [DOI](https://doi.org/10.1109/ITSC60802.2025.11423103)
-- **TRIT-Net: Triplet-based Railway Instance Tracing Network Using Attraction Field Representation** — CRV 2025 · [Paper](https://crv.pubpub.org/pub/h6d3dccv) · [Code](https://github.com/mvakili96/TRIT-Net)
-- **TPE-Net: Track Point Extraction and Association Network for Rail Path Proposal Generation** — IEEE CASE 2023, equal-contribution co-first author · [DOI](https://doi.org/10.1109/CASE56687.2023.10260541)
-
-<details>
-<summary><strong>Current manuscripts</strong></summary>
-
-<br>
-
-- **Triplet-based Railway Ego-path Candidate Tracing Using a Learned Attraction Field Representation** — under review at *Engineering Applications of Artificial Intelligence*
-- **TPE-Net: A Deep Triple Point Extraction Network for Multiple-Track Rail Path Association** — under review at *IEEE Transactions on Intelligent Transportation Systems*
-
-</details>
-
 ## Experience
 
 **Graduate Researcher · Augmented Urban Space Modelling Lab, York University · 2021–present**  
@@ -121,7 +110,7 @@ Develops end-to-end railway-perception workflows spanning RGB and LiDAR data, da
 **Visiting Researcher · Smart Mobility Lab, Hanyang University · 2026**  
 Worked on foundation-model pipelines for delivery-robot survey data, including object perception, depth estimation, and 3D reconstruction.
 
-<sub>Earlier work spans autonomous agricultural systems, 3D orchard mapping, embedded sensing and actuation, signal processing, PCB/AVR development, and mechanical validation.</sub>
+<sub>Earlier work spans autonomous agricultural systems, 3D mapping, embedded sensing and actuation, signal processing, and mechanical design.</sub>
 
 ## Education
 
