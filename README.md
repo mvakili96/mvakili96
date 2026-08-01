@@ -12,11 +12,6 @@
   Open to relocation
 </p>
 
-<p align="center">
-  I build reliable AI and machine learning systems. From real-world data and model training
-  to distributed experiments, rigorous evaluation, and deployable workflows.
-</p>
-
 <table>
   <tr>
     <td align="center" width="25%"><strong>RGB · LiDAR · Natural language</strong><br><sub>Perception modalities</sub></td>
@@ -31,6 +26,31 @@ I am an **AI Research Engineer and PhD Candidate at York University** working on
 
 Beyond research, I build tested backend systems and developer workflows using Flask, Redis, Docker, GitHub Actions, and pytest.
 
+## Technical toolkit
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>AI research areas</strong><br><br>
+      Computer Vision · Deep Learning · Multimodal AI · Vision-Language Models · Semantic and Instance Segmentation · Self-Supervised Learning · LiDAR Point Cloud · Depth Estimation · 3D Reconstruction
+    </td>
+    <td width="50%" valign="top">
+      <strong>ML frameworks and libraries</strong><br><br>
+      Python · PyTorch · OpenCV · NumPy · Pandas · scikit-learn · TorchVision · MMDetection · MMSegmentation · LoRA/PEFT
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Distributed training and infrastructure</strong><br><br>
+      PyTorch DDP · DeepSpeed · Slurm · Apptainer · Docker · Docker Compose
+    </td>
+    <td width="50%" valign="top">
+      <strong>Software and MLOps</strong><br><br>
+      Flask · Redis Stack · REST APIs · pytest · CI/CD · GitHub Actions · Git · Weights & Biases
+    </td>
+  </tr>
+</table>
+
 ## Research trajectory
 
 <p align="center">
@@ -41,9 +61,9 @@ Beyond research, I build tested backend systems and developer workflows using Fl
 
 ### 01 / Reasoning-Guided Railway Perception
 
-A railway-domain adaptation of **[LISA](https://openaccess.thecvf.com/content/CVPR2024/html/Lai_LISA_Reasoning_Segmentation_via_Large_Language_Model_CVPR_2024_paper.html)** that combines a LLaVA-style multimodal backbone, SAM-based mask prediction, and LoRA fine-tuning to segment the valid ego-path in railway switch scenes from an image and language prompt. The project adds rail-specific prompts, polygon-mask and explanation supervision, and distributed training workflows using DeepSpeed, Slurm, and Apptainer.
+A railway-domain adaptation of **[LISA](https://openaccess.thecvf.com/content/CVPR2024/html/Lai_LISA_Reasoning_Segmentation_via_Large_Language_Model_CVPR_2024_paper.html)** that combines a LLaVA-style multimodal backbone, SAM-based mask prediction, and LoRA fine-tuning to segment the valid ego-path in railway switch scenes from an image and language prompt using 8 NVIDIA L40 GPUs across 2 nodes. The project adds rail-specific prompts, polygon-mask and explanation supervision, and distributed training workflows using DeepSpeed, Slurm, and Apptainer.
 
-**8 NVIDIA L40 GPUs across 2 nodes** · **Accepted and presented in ISPRS Conference 2026**
+- **Accepted and presented in ISPRS Conference 2026**
 
 `PyTorch` · `LLaVA` · `SAM` · `LoRA` · `DeepSpeed` · `Slurm` · `Apptainer` . `W&B`
 
@@ -72,34 +92,9 @@ A Flask and Redis Stack application for managing users, groups, expenses, and se
 
 **GitHub Actions** validates pytest-based unit tests and a Docker Compose integration flow against Redis Stack.
 
-`Python` · `Flask` · `Redis Stack` · `REST APIs` · `Docker Compose` · `pytest` · `GitHub Actions`
+`Flask` · `Redis Stack` · `REST APIs` · `Docker Compose` · `pytest` · `GitHub Actions` · `CI/CD`
 
 [Explore the project →](https://github.com/mvakili96/ChipIn)
-
-## Technical toolkit
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <strong>Perception and learning</strong><br><br>
-      Computer Vision · Deep Learning · Multimodal AI · Vision-Language Models · Semantic and Instance Segmentation · Self-Supervised Learning · LiDAR and Point Clouds · Depth Estimation · 3D Reconstruction
-    </td>
-    <td width="50%" valign="top">
-      <strong>ML development</strong><br><br>
-      Python · PyTorch · OpenCV · NumPy · Pandas · scikit-learn · Transformers · LoRA/PEFT
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <strong>Training and infrastructure</strong><br><br>
-      PyTorch DDP · DeepSpeed · Slurm · Apptainer · Docker · Docker Compose · Weights & Biases · TensorBoard
-    </td>
-    <td width="50%" valign="top">
-      <strong>Software engineering</strong><br><br>
-      Flask · Redis Stack · REST APIs · pytest · GitHub Actions · Git · Linux
-    </td>
-  </tr>
-</table>
 
 ## Selected research
 
