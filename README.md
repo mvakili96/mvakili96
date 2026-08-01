@@ -41,27 +41,28 @@ Beyond research, I build tested backend systems and developer workflows using Fl
 
 ### 01 / Reasoning-Guided Railway Perception
 
-A railway-domain adaptation of **LISA** that combines a LLaVA-style multimodal backbone, SAM-based mask prediction, and LoRA fine-tuning to segment the valid ego-path in railway switch scenes from an image and language prompt. The project adds rail-specific prompts, polygon-mask and explanation supervision, and distributed training workflows using DeepSpeed, Slurm, and Apptainer.
+A railway-domain adaptation of **[LISA](https://openaccess.thecvf.com/content/CVPR2024/html/Lai_LISA_Reasoning_Segmentation_via_Large_Language_Model_CVPR_2024_paper.html)** that combines a LLaVA-style multimodal backbone, SAM-based mask prediction, and LoRA fine-tuning to segment the valid ego-path in railway switch scenes from an image and language prompt. The project adds rail-specific prompts, polygon-mask and explanation supervision, and distributed training workflows using DeepSpeed, Slurm, and Apptainer.
 
-**8 NVIDIA L40 GPUs across 2 nodes** · **Accepted/forthcoming in ISPRS Archives 2026**
+**8 NVIDIA L40 GPUs across 2 nodes** · **Accepted and presented in ISPRS Conference 2026**
 
-`PyTorch` · `LISA` · `LLaVA` · `SAM` · `LoRA` · `DeepSpeed` · `Slurm` · `Apptainer`
+`PyTorch` · `LLaVA` · `SAM` · `LoRA` · `DeepSpeed` · `Slurm` · `Apptainer` . `W&B`
 
 [Explore the code →](https://github.com/mvakili96/Railway_Perception_FoundationModel)  
 <sub>Railway-domain adaptation built on the open-source LISA project.</sub>
 
 ---
 
-### 02 / TRIT-Net
+### 02 / TPE-Net → TRIT-Net
 
-A multi-head railway-perception framework that predicts centerline and **Attraction Field** representations for bottom-up path-candidate tracing and controlled branching in complex switch scenes. The research code includes configurable training, dataset loaders, evaluation, checkpointing, experiment logging, and a shared demo/inference pipeline.
+**TPE-Net** extracts and associates triplet rail points into path trees to generate multiple candidate paths through complex switch scenes. **TRIT-Net builds on TPE-Net** with a multi-head framework that predicts centerline and **Attraction Field** representations for bottom-up instance tracing and controlled branching. The current TRIT-Net research also adds [VICReg](https://openreview.net/forum?id=xm6YD62D1Ub)-style self-supervised encoder pretraining using **23,924 unlabeled railway images** and multi-dataset evaluation.
 
-The current research line adds VICReg-style self-supervised encoder pretraining using **23,924 unlabeled railway images** and multi-dataset evaluation.
+- **TPE-Net** — Published at [IEEE CASE 2023](https://doi.org/10.1109/CASE56687.2023.10260541) · Journal extension under review at *IEEE Transactions on Intelligent Transportation Systems*
+- **TRIT-Net** — Published at [CRV 2025](https://crv.pubpub.org/pub/h6d3dccv) · Journal extension under review at *Engineering Applications of Artificial Intelligence*
 
-`Python` · `PyTorch` · `OpenCV` · `Transformers` · `VICReg` · `DDP/NCCL` · `W&B`
+`PyTorch` · `OpenCV` · `Transformers` · `VICReg` · `DDP/NCCL` · `Slurm` · `Apptainer` · `W&B`
 
-[Code](https://github.com/mvakili96/TRIT-Net) · [CRV 2025 paper](https://crv.pubpub.org/pub/h6d3dccv)  
-<sub>Published at CRV 2025 · Revised journal manuscript under review</sub>
+[Explore the shared code repository →](https://github.com/mvakili96/TRIT-Net)<br>
+<sub>TRIT-Net builds on TPE-Net, and both projects are maintained in this repository.</sub>
 
 ---
 
@@ -112,8 +113,8 @@ A Flask and Redis Stack application for managing users, groups, expenses, and se
 
 <br>
 
-- **Triplet-based Railway Ego-path Candidate Tracing Using a Learned Attraction Field Representation** — revised manuscript under review
-- **TPE-Net: A Deep Triple Point Extraction Network for Multiple-Track Rail Path Association** — submitted manuscript
+- **Triplet-based Railway Ego-path Candidate Tracing Using a Learned Attraction Field Representation** — under review at *Engineering Applications of Artificial Intelligence*
+- **TPE-Net: A Deep Triple Point Extraction Network for Multiple-Track Rail Path Association** — under review at *IEEE Transactions on Intelligent Transportation Systems*
 
 </details>
 
