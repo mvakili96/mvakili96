@@ -1,31 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="768" height="205" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
   <title id="title">Mohammadjavad Ghorbanalivakili — AI Research Engineer</title>
-  <desc id="desc">A dark technical banner with branching rail-like paths representing computer vision, multimodal AI, and autonomous perception.</desc>
+  <desc id="desc">A simple dark banner introducing Mohammadjavad Ghorbanalivakili and his work in computer vision, multimodal AI, and autonomous perception.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#08101f"/>
       <stop offset="0.52" stop-color="#0d1830"/>
       <stop offset="1" stop-color="#111936"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#22d3ee"/>
-      <stop offset="0.52" stop-color="#60a5fa"/>
-      <stop offset="1" stop-color="#a78bfa"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#94a3b8" stroke-opacity="0.09" stroke-width="1"/>
-    </pattern>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
     <clipPath id="frame">
       <rect x="0" y="0" width="1200" height="320" rx="28"/>
     </clipPath>
@@ -33,31 +14,6 @@
 
   <g clip-path="url(#frame)">
     <rect width="1200" height="320" fill="url(#bg)"/>
-    <rect width="1200" height="320" fill="url(#grid)"/>
-    <circle cx="940" cy="105" r="250" fill="url(#glow)"/>
-    <circle cx="1160" cy="300" r="210" fill="#7c3aed" opacity="0.08"/>
-
-    <path d="M 785 330 C 850 252 886 153 936 60" fill="none" stroke="#0ea5e9" stroke-opacity="0.22" stroke-width="22"/>
-    <path d="M 1115 330 C 1065 245 1000 147 936 60" fill="none" stroke="#8b5cf6" stroke-opacity="0.20" stroke-width="22"/>
-    <path d="M 785 330 C 850 252 886 153 936 60" fill="none" stroke="url(#accent)" stroke-width="5" filter="url(#softGlow)"/>
-    <path d="M 1115 330 C 1065 245 1000 147 936 60" fill="none" stroke="url(#accent)" stroke-width="5" filter="url(#softGlow)"/>
-    <path d="M 1115 330 C 1084 249 1104 167 1167 103" fill="none" stroke="#a78bfa" stroke-opacity="0.78" stroke-width="4"/>
-
-    <g stroke="#cbd5e1" stroke-opacity="0.18" stroke-width="3">
-      <line x1="831" y1="282" x2="1083" y2="282"/>
-      <line x1="852" y1="247" x2="1063" y2="247"/>
-      <line x1="872" y1="211" x2="1039" y2="211"/>
-      <line x1="891" y1="175" x2="1015" y2="175"/>
-      <line x1="908" y1="139" x2="990" y2="139"/>
-      <line x1="922" y1="101" x2="963" y2="101"/>
-    </g>
-
-    <g fill="#e0f2fe" filter="url(#softGlow)">
-      <circle cx="936" cy="60" r="6"/>
-      <circle cx="891" cy="175" r="4"/>
-      <circle cx="1063" cy="247" r="4"/>
-      <circle cx="1167" cy="103" r="5"/>
-    </g>
   </g>
 
   <rect x="1" y="1" width="1198" height="318" rx="27" fill="none" stroke="#60a5fa" stroke-opacity="0.24" stroke-width="2"/>
@@ -66,13 +22,13 @@
   <text x="70" y="122" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="42" font-weight="750" letter-spacing="-1.2">Mohammadjavad Ghorbanalivakili</text>
   <text x="70" y="166" fill="#cbd5e1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23" font-weight="500">AI Research Engineer <tspan fill="#64748b">·</tspan> PhD Candidate</text>
 
-  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2">
-    <rect x="70" y="210" width="174" height="38" rx="19" fill="#0e7490" fill-opacity="0.25" stroke="#22d3ee" stroke-opacity="0.48"/>
-    <text x="91" y="234" fill="#a5f3fc">COMPUTER VISION</text>
-    <rect x="258" y="210" width="157" height="38" rx="19" fill="#1d4ed8" fill-opacity="0.22" stroke="#60a5fa" stroke-opacity="0.48"/>
-    <text x="282" y="234" fill="#bfdbfe">MULTIMODAL AI</text>
-    <rect x="429" y="210" width="226" height="38" rx="19" fill="#6d28d9" fill-opacity="0.20" stroke="#a78bfa" stroke-opacity="0.48"/>
-    <text x="451" y="234" fill="#ddd6fe">AUTONOMOUS PERCEPTION</text>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" text-anchor="middle">
+    <rect x="70" y="208" width="194" height="42" rx="21" fill="#0e7490" fill-opacity="0.25" stroke="#22d3ee" stroke-opacity="0.48"/>
+    <text x="167" y="229" fill="#a5f3fc" dominant-baseline="middle">COMPUTER VISION</text>
+    <rect x="280" y="208" width="180" height="42" rx="21" fill="#1d4ed8" fill-opacity="0.22" stroke="#60a5fa" stroke-opacity="0.48"/>
+    <text x="370" y="229" fill="#bfdbfe" dominant-baseline="middle">MULTIMODAL AI</text>
+    <rect x="476" y="208" width="260" height="42" rx="21" fill="#6d28d9" fill-opacity="0.20" stroke="#a78bfa" stroke-opacity="0.48"/>
+    <text x="606" y="229" fill="#ddd6fe" dominant-baseline="middle">AUTONOMOUS PERCEPTION</text>
   </g>
 
   <text x="70" y="282" fill="#94a3b8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">Toronto, Canada  ·  Open to relocation</text>

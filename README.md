@@ -13,16 +13,15 @@
 </p>
 
 <p align="center">
-  I build perception systems for autonomous machines—from real-world sensor data and model training
-  to distributed experiments, rigorous evaluation, and deployable software workflows.
+  I build reliable AI and machine learning systems. From real-world data and model training
+  to distributed experiments, rigorous evaluation, and deployable workflows.
 </p>
 
 <table>
   <tr>
-    <td align="center" width="25%"><strong>RGB · LiDAR · VLMs</strong><br><sub>Perception modalities</sub></td>
-    <td align="center" width="25%"><strong>8× NVIDIA L40</strong><br><sub>Distributed across 2 nodes</sub></td>
-    <td align="center" width="25%"><strong>Research + engineering</strong><br><sub>Models, APIs, containers, CI</sub></td>
-    <td align="center" width="25%"><strong>3 published + 1 forthcoming</strong><br><sub>Selected research output</sub></td>
+    <td align="center" width="25%"><strong>RGB · LiDAR · Natural language</strong><br><sub>Perception modalities</sub></td>
+    <td align="center" width="25%"><strong>Research + engineering</strong><br><sub>Data pipeline, Modeling, training, evaluation, containers, APIs, CI/CD</sub></td>
+    <td align="center" width="25%"><strong>3 published + 3 forthcoming</strong><br><sub>Selected research output</sub></td>
   </tr>
 </table>
 
@@ -30,12 +29,12 @@
 
 I am an **AI Research Engineer and PhD Candidate at York University** working on reliable perception for autonomous systems. My research spans RGB and LiDAR scene understanding, self-supervised learning, and vision-language models, supported by hands-on experience with distributed GPU training, HPC infrastructure, reproducible evaluation, and containerized applications.
 
-Beyond research code, I build tested backend systems and developer workflows using Python, Flask, Redis, Docker, GitHub Actions, and pytest.
+Beyond research, I build tested backend systems and developer workflows using Flask, Redis, Docker, GitHub Actions, and pytest.
 
 ## Research trajectory
 
 <p align="center">
-  <img src="assets/research-trajectory.svg" width="100%" alt="TPE-Net candidate-path extraction to TRIT-Net learned instance tracing to reasoning-guided vision-language segmentation">
+  <img src="assets/research-trajectory.svg" width="100%" alt="TPE-Net candidate-path extraction to TRIT-Net learned instance tracing to ego-path reasoning segmentation, alongside mobile LiDAR track and switch recognition">
 </p>
 
 ## Selected work
