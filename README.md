@@ -57,7 +57,7 @@ Beyond research, I build tested backend systems and developer workflows using Fl
 
 ### 01 / Reasoning-Guided Railway Perception
 
-A railway-domain adaptation of **[LISA](https://openaccess.thecvf.com/content/CVPR2024/html/Lai_LISA_Reasoning_Segmentation_via_Large_Language_Model_CVPR_2024_paper.html)** that combines a LLaVA-style multimodal backbone, SAM-based mask prediction, and LoRA fine-tuning to segment the valid ego-path in railway switch scenes from an image and language prompt using 8 NVIDIA L40 GPUs across 2 nodes. The project adds rail-specific prompts, polygon-mask and explanation supervision, and distributed training workflows using DeepSpeed, Slurm, and Apptainer.
+A railway-domain adaptation of **[LISA](https://openaccess.thecvf.com/content/CVPR2024/html/Lai_LISA_Reasoning_Segmentation_via_Large_Language_Model_CVPR_2024_paper.html)** developed in collaboration with **Canadian National Railway (CN)**. It combines a LLaVA-style multimodal backbone, SAM-based mask prediction, and LoRA fine-tuning to segment the valid ego-path in railway switch scenes from an image and language prompt using 8 NVIDIA L40 GPUs across 2 nodes. The project adds rail-specific prompts, polygon-mask and explanation supervision, and distributed training workflows using DeepSpeed, Slurm, and Apptainer.
 
 - **Accepted and presented in ISPRS Conference 2026**
 
@@ -70,7 +70,7 @@ A railway-domain adaptation of **[LISA](https://openaccess.thecvf.com/content/CV
 
 ### 02 / TPE-Net → TRIT-Net
 
-**TPE-Net** extracts and associates triplet rail points into path trees to generate multiple candidate paths through complex switch scenes. **TRIT-Net builds on TPE-Net** with a multi-head framework that predicts centerline and **Attraction Field** representations for bottom-up instance tracing and controlled branching. The current TRIT-Net research also adds [VICReg](https://openreview.net/forum?id=xm6YD62D1Ub)-style self-supervised encoder pretraining using **23,924 unlabeled railway images** and multi-dataset evaluation.
+Developed in collaboration with **Thales Canada**, **TPE-Net** extracts and associates triplet rail points into path trees to generate multiple candidate paths through complex switch scenes. **TRIT-Net builds on TPE-Net** with a multi-head framework that predicts centerline and **Attraction Field** representations for bottom-up instance tracing and controlled branching. The current TRIT-Net research also adds [VICReg](https://openreview.net/forum?id=xm6YD62D1Ub)-style self-supervised encoder pretraining using **23,924 unlabeled railway images** and multi-dataset evaluation.
 
 - **TPE-Net** — Published at [IEEE CASE 2023](https://doi.org/10.1109/CASE56687.2023.10260541) · Journal extension under review at *IEEE Transactions on Intelligent Transportation Systems*
 - **TRIT-Net** — Published at [CRV 2025](https://crv.pubpub.org/pub/h6d3dccv) · Journal extension under review at *Engineering Applications of Artificial Intelligence*
@@ -84,11 +84,11 @@ A railway-domain adaptation of **[LISA](https://openaccess.thecvf.com/content/CV
 
 ### 03 / Multi-Railway Automatic Data Extraction
 
-An automated railway-asset extraction pipeline for mobile laser scanning point clouds. It traces individual rail vectors using Kalman filtering, detects multi-track regions through minimum description length model selection, and recognizes switch orientation, status, and merge/split type using multiscale template matching.
+Developed in collaboration with **Thales Canada**, this automated railway-asset extraction pipeline processes mobile laser scanning point clouds. It traces individual rail vectors using Kalman filtering, detects multi-track regions through minimum description length model selection, and recognizes switch orientation, status, and merge/split type using multiscale template matching.
 
 - **[Multi-Railway Track and Switch Region Recognition Using Mobile Laser Scanning Data](https://doi.org/10.1109/ITSC60802.2025.11423103)** — Published at IEEE ITSC 2025
 
-<sub>The source repository remains private.</sub>
+<sub>The source repository remains private under the industry collaboration.</sub>
 
 ---
 
@@ -108,7 +108,7 @@ A Flask and Redis Stack application for managing users, groups, expenses, and se
 Develops end-to-end railway-perception workflows spanning RGB and LiDAR data, dataset preparation, supervised and self-supervised training, vision-language model adaptation, and benchmark evaluation.
 
 **Visiting Researcher · Smart Mobility Lab, Hanyang University · 2026**  
-Worked on foundation-model pipelines for delivery-robot survey data, including object perception, depth estimation, and 3D reconstruction.
+Collaborated with **Neubility**, a Korean sidewalk-delivery-robot company, on foundation-model pipelines for delivery-robot survey data, including object detection, depth estimation, and 3D reconstruction.
 
 <sub>Earlier work spans autonomous agricultural systems, 3D mapping, embedded sensing and actuation, signal processing, and mechanical design.</sub>
 
