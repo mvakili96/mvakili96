@@ -1,5 +1,11 @@
+<h1 align="center">Mohammadjavad Ghorbanalivakili</h1>
+
+<h3 align="center">AI Research Engineer · PhD Candidate</h3>
+
 <p align="center">
-  <img src="assets/profile-header.svg" width="100%" alt="Mohammadjavad Ghorbanalivakili — AI Research Engineer, Computer Vision, Multimodal AI, and Autonomous Perception">
+  Computer Vision · Multimodal AI · Autonomous Perception
+  <br>
+  Toronto, Canada · Open to relocation
 </p>
 
 <p align="center">
