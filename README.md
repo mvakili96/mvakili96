@@ -3,7 +3,7 @@
 <p align="center"><strong>AI Research Engineer · PhD Candidate at York University</strong></p>
 
 <p align="center">
-  I build computer vision and multimodal AI systems, from preparing datasets and training models across GPUs to building tested software.
+  I build computer vision and multimodal AI systems, from preparing datasets and training models to building tested software.
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@ I also build software beyond perception: a [document retrieval pipeline with cit
       <strong>AI research areas</strong><br><br>
       Computer vision · Multimodal AI · Vision-language models<br>
       Object detection · Semantic, instance &amp; panoptic segmentation<br>
-      Supervised &amp; self-supervised learning · LiDAR · Depth estimation · 3D reconstruction
+      Supervised &amp; self-supervised learning · Depth estimation · 3D reconstruction
     </td>
     <td width="50%" valign="top">
       <strong>ML frameworks and libraries</strong><br><br>
@@ -52,7 +52,7 @@ I also build software beyond perception: a [document retrieval pipeline with cit
     </td>
     <td width="50%" valign="top">
       <strong>Software engineering and MLOps</strong><br><br>
-      Flask · Redis Stack · REST APIs · Data engineering<br>
+      Flask · Redis Stack · REST APIs <br>
       pytest · Playwright · GitHub Actions · CI/CD<br>
       Git · Weights &amp; Biases · OpenAI Codex
     </td>
@@ -98,7 +98,7 @@ I then built **TRIT-Net**, a hybrid transformer-convolution U-Net that learns **
 
 ### 03 / Multi-Railway Automatic Data Extraction
 
-In collaboration with **Thales Canada**, I developed a pipeline that extracts railway tracks and switches from mobile LiDAR point clouds. It combines Kalman filtering, minimum description length model selection, and multiscale template matching to trace rails and recognize switch configurations.
+In this collaboration with **Thales Canada**, I was responsible for the experiments and paper writing. The team's mobile LiDAR pipeline combines Kalman filtering, minimum description length model selection, and multiscale template matching to extract railway tracks and recognize switch configurations.
 
 [Read the IEEE ITSC 2025 paper](https://doi.org/10.1109/ITSC60802.2025.11423103). The source repository remains private under the industry collaboration.
 
