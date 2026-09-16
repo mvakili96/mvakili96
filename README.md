@@ -1,32 +1,30 @@
 <h1 align="center">Mohammadjavad Ghorbanalivakili</h1>
 
-<h3 align="center">AI Research Engineer · PhD Candidate</h3>
+<p align="center"><strong>AI Research Engineer · PhD Candidate at York University</strong></p>
 
 <p align="center">
-  Computer Vision · Multimodal AI · Autonomous Perception
-  <br>
-  Toronto, Canada · Open to relocation
+  I build computer vision and multimodal AI systems, from preparing datasets and training models across GPUs to building tested software.
 </p>
 
 <p align="center">
   <a href="https://linkedin.com/in/mjghvakili">LinkedIn</a>
   ·
+  <a href="https://huggingface.co/m-vakili75">Hugging Face</a>
+  ·
   <a href="https://hub.docker.com/u/mvakili96">Docker Hub</a>
+  <br>
+  Toronto, Canada · Open to relocation
 </p>
-
-<table>
-  <tr>
-    <td align="center" width="25%"><strong>RGB · LiDAR · Natural language</strong><br><sub>Perception modalities</sub></td>
-    <td align="center" width="25%"><strong>Research + engineering</strong><br><sub>Data pipeline, Modeling, training, evaluation, containers, APIs, CI/CD</sub></td>
-    <td align="center" width="25%"><strong>3 published + 3 forthcoming</strong><br><sub>Selected research output</sub></td>
-  </tr>
-</table>
 
 ## About
 
-I am an **AI Research Engineer and PhD Candidate at York University** working on reliable perception for autonomous systems. My research spans RGB and LiDAR scene understanding, self-supervised learning, and vision-language models, supported by hands-on experience with distributed GPU training, HPC infrastructure, reproducible evaluation, and containerized applications.
+Over the past five years, I've worked with images, LiDAR point clouds, and language to tackle perception problems in transportation and robotics. I develop models, build the data and evaluation pipelines around them, and run reproducible experiments on GPU clusters.
 
-Beyond research, I build tested backend systems and developer workflows using Flask, Redis, Docker, GitHub Actions, and pytest.
+I also build software beyond perception: a [document retrieval pipeline with cited answers](#05--document-retrieval-with-local-llms) and a [shared-expense application with automated tests and deployment workflows](#04--chipin).
+
+<p align="center">
+  <a href="#selected-work">Explore my projects</a> · <a href="#technical-toolkit">Browse my toolkit</a> · <a href="#experience">See my experience</a>
+</p>
 
 ## Technical toolkit
 
@@ -34,21 +32,35 @@ Beyond research, I build tested backend systems and developer workflows using Fl
   <tr>
     <td width="50%" valign="top">
       <strong>AI research areas</strong><br><br>
-      Computer Vision · Deep Learning · Multimodal AI · Vision-Language Models · Semantic and Instance Segmentation · Self-Supervised Learning · LiDAR Point Cloud · Depth Estimation · 3D Reconstruction
+      Computer vision · Multimodal AI · Vision-language models<br>
+      Object detection · Semantic, instance &amp; panoptic segmentation<br>
+      Supervised &amp; self-supervised learning · LiDAR · Depth estimation · 3D reconstruction
     </td>
     <td width="50%" valign="top">
       <strong>ML frameworks and libraries</strong><br><br>
-      Python · PyTorch · OpenCV · NumPy · Pandas · scikit-learn · TorchVision · MMDetection · MMSegmentation · LoRA/PEFT
+      Python · PyTorch · OpenCV · NumPy · Pandas · scikit-learn<br>
+      TorchVision · MMDetection · MMSegmentation · LoRA/PEFT<br>
+      MATLAB · Bash
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <strong>Distributed training and infrastructure</strong><br><br>
-      PyTorch DDP · DeepSpeed · Slurm · Apptainer · Docker · Docker Compose
+      PyTorch DDP · DeepSpeed · Slurm · Apptainer<br>
+      Docker · Docker Compose · Linux (Ubuntu)<br>
+      Microsoft Azure · Google Cloud Platform
     </td>
     <td width="50%" valign="top">
-      <strong>Software and MLOps</strong><br><br>
-      Flask · Redis Stack · REST APIs · pytest · CI/CD · GitHub Actions · Git · Weights & Biases
+      <strong>Software engineering and MLOps</strong><br><br>
+      Flask · Redis Stack · REST APIs · Data engineering<br>
+      pytest · Playwright · GitHub Actions · CI/CD<br>
+      Git · Weights &amp; Biases · OpenAI Codex
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <strong>Retrieval and language models</strong><br><br>
+      LangChain · FAISS · BM25 · Hybrid search · Cross-encoder reranking · Local Qwen inference
     </td>
   </tr>
 </table>
@@ -56,73 +68,75 @@ Beyond research, I build tested backend systems and developer workflows using Fl
 ## Research trajectory
 
 <p align="center">
-  <img src="assets/research-trajectory.svg" width="100%" alt="TPE-Net candidate-path extraction to TRIT-Net learned instance tracing to ego-path reasoning segmentation, alongside mobile LiDAR track and switch recognition">
+  <img src="assets/research-trajectory.svg" width="100%" alt="TPE-Net candidate path extraction progresses to TRIT-Net instance tracing and vision-language ego-path reasoning segmentation. Mobile LiDAR track and switch recognition is a parallel research line.">
 </p>
 
 ## Selected work
 
 ### 01 / Reasoning-Guided Railway Perception
 
-A railway-domain adaptation of **[LISA](https://openaccess.thecvf.com/content/CVPR2024/html/Lai_LISA_Reasoning_Segmentation_via_Large_Language_Model_CVPR_2024_paper.html)** developed in collaboration with **Canadian National Railway (CN)**. It combines a LLaVA-style multimodal backbone, SAM-based mask prediction, and LoRA fine-tuning to segment the valid ego-path in railway switch scenes from an image and language prompt using 8 NVIDIA L40 GPUs across 2 nodes. The project adds rail-specific prompts, polygon-mask and explanation supervision, and distributed training workflows using DeepSpeed, Slurm, and Apptainer.
+When several tracks meet at a switch, the model must identify the route the train can follow. In collaboration with **Canadian National Railway (CN)**, I adapted **[LISA-7B](https://openaccess.thecvf.com/content/CVPR2024/html/Lai_LISA_Reasoning_Segmentation_via_Large_Language_Model_CVPR_2024_paper.html)** to predict an ego-path mask and generate a route explanation from an image and language prompt.
 
-- **Accepted and presented in ISPRS Conference 2026**
+I built rail-specific prompts, mask and explanation supervision, and a distributed training workflow using LoRA, DeepSpeed, Slurm, and Apptainer across eight NVIDIA L40 GPUs.
 
-`PyTorch` · `LLaVA` · `SAM` · `LoRA` · `DeepSpeed` · `Slurm` · `Apptainer` . `W&B`
-
-[Explore the code →](https://github.com/mvakili96/Railway_Perception_FoundationModel)  
-<sub>Railway-domain adaptation built on the open-source LISA project.</sub>
+[Code](https://github.com/mvakili96/Railway_Perception_FoundationModel) · [Published ISPRS 2026 paper](https://isprs-archives.copernicus.org/articles/XLIX-B3-2026/89/2026/) · [Model weights](https://huggingface.co/m-vakili75/railway-lisa-7b-semantic-reasoning-clip)
 
 ---
 
 ### 02 / TPE-Net → TRIT-Net
 
-Developed in collaboration with **Thales Canada**, **TPE-Net** extracts and associates triplet rail points into path trees to generate multiple candidate paths through complex switch scenes. **TRIT-Net builds on TPE-Net** with a multi-head framework that predicts centerline and **Attraction Field** representations for bottom-up instance tracing and controlled branching. The current TRIT-Net research also adds [VICReg](https://openreview.net/forum?id=xm6YD62D1Ub)-style self-supervised encoder pretraining using **23,924 unlabeled railway images** and multi-dataset evaluation.
+This research traces individual rail paths through scenes where tracks split and merge. I developed **TPE-Net** in collaboration with **Thales Canada**, combining a regression CNN with graph-based spatial clustering to construct candidate paths.
 
-- **TPE-Net** — Published at [IEEE CASE 2023](https://doi.org/10.1109/CASE56687.2023.10260541) · Journal extension under review at *IEEE Transactions on Intelligent Transportation Systems*
-- **TRIT-Net** — Published at [CRV 2025](https://crv.pubpub.org/pub/h6d3dccv) · Journal extension under review at *Engineering Applications of Artificial Intelligence*
+I then built **TRIT-Net**, a hybrid transformer-convolution U-Net that learns **Attraction Field Maps** for tracing and branching. The project also uses [VICReg](https://openreview.net/forum?id=xm6YD62D1Ub) self-supervised pretraining on **23,924 unlabeled railway images**.
 
-`PyTorch` · `OpenCV` · `Transformers` · `VICReg` · `DDP/NCCL` · `Slurm` · `Apptainer` · `W&B`
+- **TPE-Net** was published at [IEEE CASE 2023](https://doi.org/10.1109/CASE56687.2023.10260541). Its journal extension is under review at *IEEE Transactions on Intelligent Transportation Systems*.
+- **TRIT-Net** was published at [CRV 2025](https://crv.pubpub.org/pub/h6d3dccv). Its journal extension is under review at *Engineering Applications of Artificial Intelligence*.
 
-[Explore the shared code repository →](https://github.com/mvakili96/TRIT-Net)<br>
-<sub>TRIT-Net builds on TPE-Net, and both projects are maintained in this repository.</sub>
+[Explore the shared repository](https://github.com/mvakili96/TRIT-Net). TRIT-Net builds on TPE-Net, and both projects share this codebase.
 
 ---
 
 ### 03 / Multi-Railway Automatic Data Extraction
 
-Developed in collaboration with **Thales Canada**, this automated railway-asset extraction pipeline processes mobile laser scanning point clouds. It traces individual rail vectors using Kalman filtering, detects multi-track regions through minimum description length model selection, and recognizes switch orientation, status, and merge/split type using multiscale template matching.
+In collaboration with **Thales Canada**, I developed a pipeline that extracts railway tracks and switches from mobile LiDAR point clouds. It combines Kalman filtering, minimum description length model selection, and multiscale template matching to trace rails and recognize switch configurations.
 
-- **[Multi-Railway Track and Switch Region Recognition Using Mobile Laser Scanning Data](https://doi.org/10.1109/ITSC60802.2025.11423103)** — Published at IEEE ITSC 2025
-
-<sub>The source repository remains private under the industry collaboration.</sub>
+[Read the IEEE ITSC 2025 paper](https://doi.org/10.1109/ITSC60802.2025.11423103). The source repository remains private under the industry collaboration.
 
 ---
 
 ### 04 / ChipIn
 
-A Flask and Redis Stack application for managing users, groups, expenses, and settlement calculations. It includes a browser admin panel, Telegram Mini App and bot integration, server-side Telegram authentication, Docker Compose environments, and automated unit and live-service integration tests.
+ChipIn helps groups record shared expenses and calculate who owes whom. In this collaborative side project, I developed a containerized **Flask and Redis Stack** backend with REST APIs, a browser admin panel, and Telegram integration. GitHub Actions runs the project's unit and integration tests.
 
-**GitHub Actions** validates pytest-based unit tests and a Docker Compose integration flow against Redis Stack.
+[Explore ChipIn](https://github.com/mvakili96/ChipIn)
 
-`Flask` · `Redis Stack` · `REST APIs` · `Docker Compose` · `pytest` · `GitHub Actions` · `CI/CD`
+---
 
-[Explore the project →](https://github.com/mvakili96/ChipIn)
+### 05 / Document Retrieval with Local LLMs
+
+I built a **retrieval-augmented generation (RAG)** pipeline that answers questions across six PDFs totaling **5,552 pages**, with source and page citations. It combines vector retrieval and BM25 keyword search, reranks candidates with a cross-encoder, and generates answers locally with **Qwen2.5-7B**. FAISS supports a choice between exact kNN and approximate HNSW search.
+
+I created a **50-question evaluation benchmark** to guide changes to chunking, retrieval, and reranking. The baseline achieved **74.35% mean evidence-text recall** with the top four reranked chunks, averaged over the 47 questions with scored evidence; three unanswerable questions were retained for manual inspection. This metric measures retrieval coverage of annotated passages.
+
+[Explore the RAG pipeline](https://github.com/mvakili96/RAG) · [Read the evaluation](https://github.com/mvakili96/RAG/blob/master/evaluation-results/summary.md)
 
 ## Experience
 
-**Graduate Researcher · Augmented Urban Space Modelling Lab, York University · 2021–present**  
-Develops end-to-end railway-perception workflows spanning RGB and LiDAR data, dataset preparation, supervised and self-supervised training, vision-language model adaptation, and benchmark evaluation.
+**Graduate Researcher · Augmented Urban Space Modelling Lab, York University · 2021–present**
 
-**Visiting Researcher · Smart Mobility Lab, Hanyang University · 2026**  
-Collaborated with **Neubility**, a Korean sidewalk-delivery-robot company, on foundation-model pipelines for delivery-robot survey data, including object detection, depth estimation, and 3D reconstruction.
+I develop railway perception pipelines from RGB images and LiDAR data through model training and benchmark evaluation. My work includes collaborations with **Thales Canada**, **Metrolinx**, and the **Ontario Autonomous Vehicle Innovation Network (OAVIN)**.
+
+**Visiting Researcher · Smart Mobility Lab, Hanyang University · 2026**
+
+I collaborated with **Neubility**, a Korean sidewalk delivery robot company, on foundation-model pipelines for object detection, depth estimation, and 3D reconstruction.
 
 <sub>Earlier work spans autonomous agricultural systems, 3D mapping, embedded sensing and actuation, signal processing, and mechanical design.</sub>
 
 ## Education
 
-- **PhD Candidate, Earth and Space Science and Engineering** — York University
-- **MSc, Mechanical Engineering** — Sharif University of Technology
-- **BSc, Mechanical Engineering** — University of Tehran
+- I'm a **PhD candidate in Earth and Space Science and Engineering** at York University.
+- I earned my **MSc in Mechanical Engineering** at Sharif University of Technology.
+- I earned my **BSc in Mechanical Engineering** at the University of Tehran.
 
 ## Beyond the lab
 
@@ -131,7 +145,7 @@ Outside AI research, I am a personal trainer and HIIT instructor recognized as t
 ---
 
 <p align="center">
-  <strong>Interested in computer vision, multimodal AI, autonomous perception, or real-world ML systems?</strong>
+  I'm open to research engineering and applied ML opportunities, including relocation.
   <br><br>
   <a href="https://linkedin.com/in/mjghvakili">Let's connect on LinkedIn</a>
 </p>
