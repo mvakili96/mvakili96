@@ -20,7 +20,7 @@
 
 Over the past five years, I've worked with images, LiDAR point clouds, and language to tackle perception problems in transportation and robotics. I develop models, build the data and evaluation pipelines around them, and run reproducible experiments on GPU clusters.
 
-I also build software beyond perception: a [document retrieval pipeline with cited answers](#05--document-retrieval-with-local-llms) and a [shared-expense application with automated tests and deployment workflows](#04--chipin).
+I also build software beyond perception: a [source-grounded interview-prep assistant](#05--concept-to-code-grounded-interview-prep-rag) and a [shared-expense application with automated tests and deployment workflows](#04--chipin).
 
 <p align="center">
   <a href="#selected-work">Explore my projects</a> · <a href="#technical-toolkit">Browse my toolkit</a> · <a href="#experience">See my experience</a>
@@ -112,13 +112,13 @@ ChipIn helps groups record shared expenses and calculate who owes whom. In this 
 
 ---
 
-### 05 / Document Retrieval with Local LLMs
+### 05 / Concept-to-Code: Grounded Interview Prep RAG
 
-I built a **retrieval-augmented generation (RAG)** pipeline that answers questions across six PDFs totaling **5,552 pages**, with source and page citations. It combines vector retrieval and BM25 keyword search, reranks candidates with a cross-encoder, and generates answers locally with **Qwen2.5-7B**. FAISS supports a choice between exact kNN and approximate HNSW search.
+I'm building a local, source-grounded assistant that connects technical interview theory with targeted coding practice. Its current **retrieval-augmented generation (RAG)** pipeline answers questions across six PDFs totaling **6,059 pages** with page-level citations. It supports conversational follow-ups and active-source memory, persists BM25 and FAISS indexes between runs, reranks hybrid search results with a cross-encoder, and generates answers locally with **Qwen2.5-7B**.
 
-I created a **50-question evaluation benchmark** to guide changes to chunking, retrieval, and reranking. The baseline achieved **74.35% mean evidence-text recall** with the top four reranked chunks, averaged over the 47 questions with scored evidence; three unanswerable questions were retained for manual inspection. This metric measures retrieval coverage of annotated passages.
+On a source-audited **50-question benchmark**, the latest pipeline achieved **74.45% mean evidence-text recall** using the top four reranked chunks, averaged across 47 scored answerable questions. The project is now expanding toward recommending LeetCode problems that exercise the algorithmic patterns behind a technical concept. The first `/related` workflow is under development on a feature branch.
 
-[Explore the RAG pipeline](https://github.com/mvakili96/RAG) · [Read the evaluation](https://github.com/mvakili96/RAG/blob/master/evaluation-results/summary.md)
+[Explore Concept-to-Code](https://github.com/mvakili96/Concept-to-Code) · [Read the evaluation](https://github.com/mvakili96/Concept-to-Code/blob/master/evaluation-results/summary.md)
 
 ## Experience
 
