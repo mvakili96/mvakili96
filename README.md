@@ -1,6 +1,6 @@
 <h1 align="center">Mohammadjavad Ghorbanalivakili</h1>
 
-<p align="center"><strong>AI Research Engineer · PhD, York University</strong></p>
+<p align="center"><strong>AI Research Engineer · PhD in Computer Vision & Autonomous Perception at York University</strong></p>
 
 <p align="center">
   I build computer vision and multimodal AI systems, from preparing datasets and training models to building tested software.
@@ -124,9 +124,9 @@ The implemented **LeetCode recommendation workflow** uses a grounded technical a
 
 ## Experience
 
-**Doctoral Research · Augmented Urban Space Modelling Lab, York University · 2021–2026**
+**Graduate Researcher · Augmented Urban Space Modelling Lab, York University · 2021–2026**
 
-I worked on railway perception pipelines spanning RGB images and LiDAR data, model training, and benchmark evaluation. My work included collaborations with **Thales Canada**, **Metrolinx**, and the **Ontario Autonomous Vehicle Innovation Network (OAVIN)**.
+I developed railway perception pipelines from RGB images and LiDAR data through model training and benchmark evaluation. My work includes collaborations with **Thales Canada**, **Metrolinx**, and the **Ontario Autonomous Vehicle Innovation Network (OAVIN)**.
 
 **Visiting Researcher · Smart Mobility Lab, Hanyang University · 2026**
 
@@ -136,18 +136,18 @@ I collaborated with **Neubility**, a Korean sidewalk delivery robot company, on 
 
 ## Education
 
-- I earned my **PhD in Earth and Space Science and Engineering** at York University in 2026.
+- I earned my **PhD in Earth and Space Science and Engineering** at York University.
 - I earned my **MSc in Mechanical Engineering** at Sharif University of Technology.
 - I earned my **BSc in Mechanical Engineering** at the University of Tehran.
 
 ## Beyond the lab
 
-Outside AI research, I am a personal trainer and HIIT instructor recognized as the **Tait McKenzie Centre's Personal Trainer of the Year for 2024–2025**.
+Outside AI research, I am a casual-contract personal trainer and HIIT instructor, recognized as the **Tait McKenzie Centre's Personal Trainer of the Year for 2024–2025**.
 
 ---
 
 <p align="center">
-  I'm open to research engineering and applied ML opportunities, including relocation.
+  I'm open to research engineering and applied AI/ML opportunities, including relocation.
   <br><br>
   <a href="https://linkedin.com/in/mjghvakili">Let's connect on LinkedIn</a>
 </p>
