@@ -1,6 +1,6 @@
 <h1 align="center">Mohammadjavad Ghorbanalivakili</h1>
 
-<p align="center"><strong>AI Research Engineer · PhD Candidate at York University</strong></p>
+<p align="center"><strong>AI Research Engineer · PhD, York University</strong></p>
 
 <p align="center">
   I build computer vision and multimodal AI systems, from preparing datasets and training models to building tested software.
@@ -60,7 +60,7 @@ I also build software beyond perception: a [source-grounded interview-prep assis
   <tr>
     <td colspan="2" valign="top">
       <strong>Retrieval and language models</strong><br><br>
-      LangChain · FAISS · BM25 · Hybrid search · Cross-encoder reranking · Local Qwen inference
+      LangChain · FAISS · BM25 · Hybrid search · Cross-encoder reranking · Azure OpenAI · Local Qwen inference
     </td>
   </tr>
 </table>
@@ -77,9 +77,9 @@ I also build software beyond perception: a [source-grounded interview-prep assis
 
 When several tracks meet at a switch, the model must identify the route the train can follow. In collaboration with **Canadian National Railway (CN)**, I adapted **[LISA-7B](https://openaccess.thecvf.com/content/CVPR2024/html/Lai_LISA_Reasoning_Segmentation_via_Large_Language_Model_CVPR_2024_paper.html)** to predict an ego-path mask and generate a route explanation from an image and language prompt.
 
-I built rail-specific prompts, mask and explanation supervision, and a distributed training workflow using LoRA, DeepSpeed, Slurm, and Apptainer across eight NVIDIA L40 GPUs.
+I extended this work by replacing the LLaVA backbone with **Qwen3-VL-8B**, retaining **SAM** for route segmentation. The integration combines LoRA fine-tuning, selective vision and SAM training, structured switch explanations, and an auxiliary route-direction head. Training runs across eight GPUs on two nodes using DeepSpeed ZeRO-2, Slurm, and Apptainer; the checkpoint and container are publicly available.
 
-[Code](https://github.com/mvakili96/Railway_Perception_FoundationModel) · [Published ISPRS 2026 paper](https://isprs-archives.copernicus.org/articles/XLIX-B3-2026/89/2026/) · [Model weights](https://huggingface.co/m-vakili75/railway-lisa-7b-semantic-reasoning-clip)
+[Explore the Qwen integration](https://github.com/mvakili96/Railway_Perception_FoundationModel/tree/qwen_vl_integration) · [Original ISPRS 2026 paper](https://isprs-archives.copernicus.org/articles/XLIX-B3-2026/89/2026/) · [Qwen integration weights](https://huggingface.co/m-vakili75/railway-lisa-qwen3-vl-8b)
 
 ---
 
@@ -100,7 +100,9 @@ I then built **TRIT-Net**, a hybrid transformer-convolution U-Net that learns **
 
 In this collaboration with **Thales Canada**, I was responsible for the experiments and paper writing. The team's mobile LiDAR pipeline combines Kalman filtering, minimum description length model selection, and multiscale template matching to extract railway tracks and recognize switch configurations.
 
-[Read the IEEE ITSC 2025 paper](https://doi.org/10.1109/ITSC60802.2025.11423103). The source repository remains private under the industry collaboration.
+The public repository now includes the original C++ implementation and a Python reconstruction. Real-data validation of the reconstruction is pending; the paper remains the reference for the published results.
+
+[Explore the repository](https://github.com/mvakili96/3D_MLS_Railway_Switch_Recognition) · [Read the IEEE ITSC 2025 paper](https://doi.org/10.1109/ITSC60802.2025.11423103)
 
 ---
 
@@ -114,17 +116,17 @@ ChipIn helps groups record shared expenses and calculate who owes whom. In this 
 
 ### 05 / Concept-to-Code: Grounded Interview Prep RAG
 
-I'm building a local, source-grounded assistant that connects technical interview theory with targeted coding practice. Its current **retrieval-augmented generation (RAG)** pipeline answers questions across six PDFs totaling **6,059 pages** with page-level citations. It supports conversational follow-ups and active-source memory, persists BM25 and FAISS indexes between runs, reranks hybrid search results with a cross-encoder, and generates answers locally with **Qwen2.5-7B**.
+I built an interview-preparation assistant that connects explanations from technical books with coding practice. Its **retrieval-augmented generation (RAG)** pipeline answers questions with source and page citations, supports conversational follow-ups, and combines dense retrieval, BM25, and cross-encoder reranking with persistent FAISS indexes. Generation now defaults to **GPT-5.1 through Azure OpenAI**, with local **Qwen2.5-7B** available for document QA and the legacy recommendation workflow.
 
-On a source-audited **50-question benchmark**, the latest pipeline achieved **74.45% mean evidence-text recall** using the top four reranked chunks, averaged across 47 scored answerable questions. The project is now expanding toward recommending LeetCode problems that exercise the algorithmic patterns behind a technical concept. The first `/related` workflow is under development on a feature branch.
+The implemented **LeetCode recommendation workflow** uses a grounded technical answer to shortlist from **4,000 problem titles**, checks up to 20 full statements against the technical evidence, and returns up to three cited recommendations. I evaluate document answers on a **50-question benchmark** with an LLM judge and separate judge-validation cases, and recommendations on a **40-question benchmark** with frozen relevance labels. These development evaluations track answer quality and recommendation relevance; the recommendation labels are incomplete.
 
-[Explore Concept-to-Code](https://github.com/mvakili96/Concept-to-Code) · [Read the evaluation](https://github.com/mvakili96/Concept-to-Code/blob/master/evaluation-results/summary.md)
+[Explore Concept-to-Code](https://github.com/mvakili96/Concept-to-Code) · [Document QA evaluation](https://github.com/mvakili96/Concept-to-Code/blob/master/evaluation-results/document-qa/summary.md) · [LeetCode evaluation](https://github.com/mvakili96/Concept-to-Code/blob/master/evaluation-results/leetcode-recommendation/v2/summary.md)
 
 ## Experience
 
-**Graduate Researcher · Augmented Urban Space Modelling Lab, York University · 2021–present**
+**Doctoral Research · Augmented Urban Space Modelling Lab, York University · 2021–2026**
 
-I develop railway perception pipelines from RGB images and LiDAR data through model training and benchmark evaluation. My work includes collaborations with **Thales Canada**, **Metrolinx**, and the **Ontario Autonomous Vehicle Innovation Network (OAVIN)**.
+I worked on railway perception pipelines spanning RGB images and LiDAR data, model training, and benchmark evaluation. My work included collaborations with **Thales Canada**, **Metrolinx**, and the **Ontario Autonomous Vehicle Innovation Network (OAVIN)**.
 
 **Visiting Researcher · Smart Mobility Lab, Hanyang University · 2026**
 
@@ -134,7 +136,7 @@ I collaborated with **Neubility**, a Korean sidewalk delivery robot company, on 
 
 ## Education
 
-- I'm a **PhD candidate in Earth and Space Science and Engineering** at York University.
+- I earned my **PhD in Earth and Space Science and Engineering** at York University in 2026.
 - I earned my **MSc in Mechanical Engineering** at Sharif University of Technology.
 - I earned my **BSc in Mechanical Engineering** at the University of Tehran.
 
